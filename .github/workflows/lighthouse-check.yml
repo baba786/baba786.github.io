@@ -1,0 +1,76 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 1' # Run every Monday at midnight
+  workflow_dispatch:
+
+jobs:
+  lighthouse-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Wait for GitHub Pages to deploy
+        run: sleep 60
+      
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          urls: |
+            https://baba786.github.io/
+            https://baba786.github.io/about/
+            https://baba786.github.io/projects/
+          budgetPath: ./.github/lighthouse/budget.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          
+      - name: Create/Update budget file if it doesn't exist
+        run: |
+          mkdir -p ./.github/lighthouse
+          if [ ! -f ./.github/lighthouse/budget.json ]; then
+            echo '[
+              {
+                "path": "/*",
+                "resourceSizes": [
+                  {
+                    "resourceType": "document",
+                    "budget": 20
+                  },
+                  {
+                    "resourceType": "stylesheet",
+                    "budget": 50
+                  },
+                  {
+                    "resourceType": "font",
+                    "budget": 100
+                  },
+                  {
+                    "resourceType": "image",
+                    "budget": 300
+                  },
+                  {
+                    "resourceType": "script",
+                    "budget": 150
+                  }
+                ],
+                "timings": [
+                  {
+                    "metric": "interactive",
+                    "budget": 3000
+                  },
+                  {
+                    "metric": "first-contentful-paint",
+                    "budget": 1500
+                  }
+                ]
+              }
+            ]' > ./.github/lighthouse/budget.json
+            git config --global user.name "GitHub Actions"
+            git config --global user.email "actions@github.com"
+            git add ./.github/lighthouse/budget.json
+            git commit -m "Add Lighthouse budget file"
+            git push
+          fi
