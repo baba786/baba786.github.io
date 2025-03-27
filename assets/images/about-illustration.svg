@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="500px" viewBox="0 0 600 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>About Illustration</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6200EA" offset="0%"></stop>
+            <stop stop-color="#03DAC6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#6200EA" offset="0%"></stop>
+            <stop stop-color="#FF0166" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background shapes -->
+        <circle fill="#F5F5F5" cx="300" cy="250" r="200"></circle>
+        
+        <!-- Decorative elements -->
+        <circle fill="url(#linearGradient-1)" opacity="0.8" cx="450" cy="150" r="30"></circle>
+        <circle fill="url(#linearGradient-2)" opacity="0.8" cx="150" cy="350" r="25"></circle>
+        <rect fill="#6200EA" opacity="0.6" x="400" y="300" width="40" height="40" rx="5"></rect>
+        <rect fill="#03DAC6" opacity="0.6" x="180" y="180" width="30" height="30" rx="5"></rect>
+        
+        <!-- Computer/Device -->
+        <g transform="translate(200, 200)">
+            <!-- Monitor/Screen -->
+            <rect fill="#333333" x="0" y="0" width="200" height="150" rx="10"></rect>
+            <rect fill="#FFFFFF" x="10" y="10" width="180" height="130" rx="5"></rect>
+            
+            <!-- Code on screen -->
+            <rect fill="#F5F5F5" x="20" y="30" width="160" height="10" rx="2"></rect>
+            <rect fill="#F5F5F5" x="20" y="50" width="140" height="10" rx="2"></rect>
+            <rect fill="#F5F5F5" x="20" y="70" width="160" height="10" rx="2"></rect>
+            <rect fill="#F5F5F5" x="20" y="90" width="100" height="10" rx="2"></rect>
+            <rect fill="#6200EA" opacity="0.8" x="20" y="110" width="70" height="20" rx="5"></rect>
+            
+            <!-- Stand -->
+            <rect fill="#333333" x="80" y="150" width="40" height="20" rx="5"></rect>
+            <rect fill="#333333" x="90" y="170" width="20" height="30" rx="2"></rect>
+            <rect fill="#333333" x="70" y="200" width="60" height="10" rx="5"></rect>
+        </g>
+        
+        <!-- Abstract code shapes floating around -->
+        <g transform="translate(100, 100)" opacity="0.7">
+            <rect fill="#6200EA" x="0" y="0" width="50" height="10" rx="5"></rect>
+            <rect fill="#03DAC6" x="60" y="0" width="30" height="10" rx="5"></rect>
+            <rect fill="#FF0166" x="100" y="0" width="20" height="10" rx="5"></rect>
+        </g>
+        
+        <g transform="translate(400, 120)" opacity="0.7">
+            <rect fill="#6200EA" x="0" y="0" width="40" height="10" rx="5"></rect>
+            <rect fill="#03DAC6" x="50" y="0" width="20" height="10" rx="5"></rect>
+        </g>
+        
+        <g transform="translate(120, 350)" opacity="0.7">
+            <rect fill="#6200EA" x="0" y="0" width="60" height="10" rx="5"></rect>
+            <rect fill="#03DAC6" x="70" y="0" width="40" height="10" rx="5"></rect>
+            <rect fill="#FF0166" x="120" y="0" width="30" height="10" rx="5"></rect>
+        </g>
+        
+        <!-- Connection lines -->
+        <path d="M150,350 Q300,300 450,150" stroke="#6200EA" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"></path>
+        <path d="M180,180 Q300,230 400,300" stroke="#03DAC6" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"></path>
+        
+        <!-- Animated elements (will be animated with CSS) -->
+        <circle fill="#6200EA" class="floating" cx="120" cy="120" r="8"></circle>
+        <circle fill="#03DAC6" class="floating" cx="480" cy="280" r="6"></circle>
+        <circle fill="#FF0166" class="floating" cx="200" cy="380" r="7"></circle>
+        
+        <!-- Abstract elements -->
+        <polygon fill="#6200EA" opacity="0.6" points="500,400 520,430 480,430"></polygon>
+        <polygon fill="#03DAC6" opacity="0.6" points="100,200 120,230 80,230"></polygon>
+    </g>
+</svg>
