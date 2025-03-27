@@ -1,54 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My GitHub Pages Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="container">
-            <h2>About This Site</h2>
-            <p>This is my website hosted on GitHub Pages. I created it as a demonstration of how to set up a simple website directly from a GitHub repository.</p>
-            
-            <div class="highlight">
-                <p>GitHub Pages makes it easy to publish your site to the web with just a few clicks!</p>
+---
+layout: default
+---
+
+<div class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__decoration"></div>
+  <div class="hero__content">
+    <h1 class="hero__title">Creating Digital Experiences That Matter</h1>
+    <p class="hero__subtitle">Designer, Developer & Creative Technologist</p>
+    <a href="#projects" class="btn btn--white">View My Work</a>
+  </div>
+</div>
+
+<div class="page__content">
+  <div class="container">
+    <!-- About Section -->
+    <section class="about-section animated fadeIn" style="animation-delay: 0.2s;">
+      <div class="about-section__inner">
+        <div class="about-section__content">
+          <h2 class="section-title">About Me</h2>
+          <p class="lead">I'm a passionate designer and developer creating unique digital experiences that blend aesthetics with functionality.</p>
+          <p>With a background in both design and development, I bring a holistic approach to every project. I focus on creating solutions that not only look great but also solve real user problems efficiently.</p>
+          <p>I believe in the power of clean code, intuitive interfaces, and delightful interactions to create memorable experiences.</p>
+          <a href="/about/" class="btn btn--primary">Learn More</a>
+        </div>
+        <div class="about-section__image">
+          <img src="/assets/images/about-illustration.svg" alt="About illustration">
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section animated fadeIn" style="animation-delay: 0.4s;">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skills-grid__item">
+          <i class="fas fa-code"></i>
+          <h4>Web Development</h4>
+        </div>
+        <div class="skills-grid__item">
+          <i class="fas fa-paint-brush"></i>
+          <h4>UI/UX Design</h4>
+        </div>
+        <div class="skills-grid__item">
+          <i class="fas fa-mobile-alt"></i>
+          <h4>Responsive Design</h4>
+        </div>
+        <div class="skills-grid__item">
+          <i class="fas fa-server"></i>
+          <h4>Backend Development</h4>
+        </div>
+        <div class="skills-grid__item">
+          <i class="fas fa-database"></i>
+          <h4>Database Design</h4>
+        </div>
+        <div class="skills-grid__item">
+          <i class="fas fa-search"></i>
+          <h4>SEO Optimization</h4>
+        </div>
+        <div class="skills-grid__item">
+          <i class="fas fa-universal-access"></i>
+          <h4>Accessibility</h4>
+        </div>
+        <div class="skills-grid__item">
+          <i class="fas fa-rocket"></i>
+          <h4>Performance</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section animated fadeIn" style="animation-delay: 0.6s;">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="/assets/images/project1.jpg" alt="Project 1" class="project-card__image">
+          <div class="project-card__content">
+            <h3 class="project-card__title">E-Commerce Platform</h3>
+            <p class="project-card__excerpt">A fully responsive e-commerce platform built with modern web technologies.</p>
+            <div class="project-card__tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
             </div>
+            <div class="project-card__meta">
+              <span>2025</span>
+              <a href="/projects/project1" class="btn btn--small">View Project</a>
+            </div>
+          </div>
         </div>
         
-        <h2>What I'm Learning</h2>
-        <p>I'm currently learning how to:</p>
-        <ul>
-            <li>Create repositories on GitHub</li>
-            <li>Set up GitHub Pages</li>
-            <li>Build and design web pages</li>
-            <li>Manage content through git</li>
-        </ul>
+        <div class="project-card">
+          <img src="/assets/images/project2.jpg" alt="Project 2" class="project-card__image">
+          <div class="project-card__content">
+            <h3 class="project-card__title">Portfolio Website</h3>
+            <p class="project-card__excerpt">A custom portfolio website with animations and interactive elements.</p>
+            <div class="project-card__tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>GSAP</span>
+            </div>
+            <div class="project-card__meta">
+              <span>2024</span>
+              <a href="/projects/project2" class="btn btn--small">View Project</a>
+            </div>
+          </div>
+        </div>
         
-        <h2>Next Steps</h2>
-        <p>As I continue learning, I plan to add more features to this site, such as:</p>
-        <ul>
-            <li>More content pages</li>
-            <li>A blog section</li>
-            <li>Project showcases</li>
-            <li>Improved design and styling</li>
-        </ul>
-    </main>
-    
-    <footer>
-        <p>Created with GitHub Pages - 2025</p>
-        <p><a href="https://github.com/baba786/baba786.github.io">View on GitHub</a></p>
-    </footer>
-</body>
-</html>
+        <div class="project-card">
+          <img src="/assets/images/project3.jpg" alt="Project 3" class="project-card__image">
+          <div class="project-card__content">
+            <h3 class="project-card__title">Mobile App</h3>
+            <p class="project-card__excerpt">A health tracking mobile application with clean UI and seamless UX.</p>
+            <div class="project-card__tags">
+              <span>React Native</span>
+              <span>Firebase</span>
+              <span>Redux</span>
+            </div>
+            <div class="project-card__meta">
+              <span>2024</span>
+              <a href="/projects/project3" class="btn btn--small">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-cta">
+        <a href="/projects/" class="btn btn--primary">View All Projects</a>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section animated fadeIn" style="animation-delay: 0.8s;">
+      <h2 class="section-title">What Clients Say</h2>
+      <div class="testimonials-slider">
+        <div class="testimonial">
+          <div class="testimonial__content">
+            <p>"Working with this developer was an absolute pleasure. The attention to detail and creative approach to problem-solving made our project exceed all expectations."</p>
+          </div>
+          <div class="testimonial__author">
+            <img src="/assets/images/client1.jpg" alt="Client 1" class="testimonial__avatar">
+            <div class="testimonial__info">
+              <h4>Jane Smith</h4>
+              <p>CEO, TechCompany</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial__content">
+            <p>"The combination of technical skills and design sensibility is rare. Our website not only functions flawlessly but looks amazing too. Highly recommended!"</p>
+          </div>
+          <div class="testimonial__author">
+            <img src="/assets/images/client2.jpg" alt="Client 2" class="testimonial__avatar">
+            <div class="testimonial__info">
+              <h4>John Davis</h4>
+              <p>Marketing Director, StartupBrand</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section animated fadeIn" style="animation-delay: 1s;">
+      <div class="contact-section__inner">
+        <div class="contact-section__content">
+          <h2 class="section-title">Let's Work Together</h2>
+          <p>Have a project in mind? I'd love to help bring your ideas to life. Get in touch and let's discuss how we can work together.</p>
+          <a href="/contact/" class="btn btn--primary">Contact Me</a>
+        </div>
+        <div class="contact-section__image">
+          <img src="/assets/images/contact-illustration.svg" alt="Contact illustration">
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+  // Animation Observer
+  document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      }
+    );
+
+    document.querySelectorAll('.animated').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
