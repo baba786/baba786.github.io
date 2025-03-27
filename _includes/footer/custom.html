@@ -1,0 +1,208 @@
+<!-- start custom footer snippets -->
+<div class="footer-custom">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3 class="footer-heading">About</h3>
+        <p>A passionate designer and developer creating exceptional digital experiences that blend aesthetics with functionality.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-heading">Navigation</h3>
+        <ul class="footer-list">
+          <li><a href="/" class="footer-link">Home</a></li>
+          <li><a href="/about/" class="footer-link">About</a></li>
+          <li><a href="/projects/" class="footer-link">Projects</a></li>
+          <li><a href="/blog/" class="footer-link">Blog</a></li>
+          <li><a href="/contact/" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-heading">Services</h3>
+        <ul class="footer-list">
+          <li>Web Design</li>
+          <li>UI/UX Design</li>
+          <li>Web Development</li>
+          <li>Mobile Development</li>
+          <li>Branding</li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-heading">Contact</h3>
+        <ul class="footer-list contact-list">
+          <li><i class="fas fa-envelope"></i> hello@example.com</li>
+          <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+          <li><i class="fas fa-map-marker-alt"></i> New York, USA</li>
+        </ul>
+        
+        <div class="social-icons">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Your Name. All rights reserved.</p>
+      <p>Made with <i class="fas fa-heart" style="color: #FF0166;"></i> and <i class="fab fa-github"></i></p>
+    </div>
+  </div>
+</div>
+
+<!-- Theme toggle button -->
+<div class="theme-toggle" aria-label="Toggle dark/light mode">
+  <i class="fas fa-moon"></i>
+</div>
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="preloader__spinner"></div>
+</div>
+
+<!-- Custom footer JavaScript -->
+<script>
+  // Add smooth scrolling for all links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+  // Remove preloader after page load
+  window.addEventListener('load', function() {
+    const preloader = document.querySelector('.preloader');
+    if (preloader) {
+      preloader.classList.add('fade-out');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    }
+  });
+</script>
+
+<style>
+  /* Custom Footer Styles */
+  .footer-custom {
+    background-color: #1a1a1a;
+    color: rgba(255,255,255,0.8);
+    padding: 5rem 0 2rem;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .footer-heading {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    position: relative;
+  }
+  
+  .footer-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #6200EA 0%, #03DAC6 100%);
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .footer-link {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #03DAC6;
+  }
+  
+  .contact-list li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-list i {
+    margin-right: 10px;
+    color: #6200EA;
+  }
+  
+  .social-icons {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background: #6200EA;
+    transform: translateY(-3px);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-bottom p {
+      margin-bottom: 1rem;
+    }
+  }
+</style>
+<!-- end custom footer snippets -->
