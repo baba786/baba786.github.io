@@ -1,0 +1,36 @@
+name: Check for broken links
+
+on:
+  # Run daily
+  schedule:
+    - cron: '0 0 * * *'
+  # Run on push to main
+  push:
+    branches:
+      - main
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      
+      - name: Install dependencies
+        run: gem install html-proofer
+      
+      - name: Build site
+        run: |
+          gem install jekyll
+          jekyll build
+      
+      - name: Check for broken links
+        run: |
+          htmlproofer ./_site --allow-hash-href --check-html --empty-alt-ignore --disable-external
