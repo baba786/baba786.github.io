@@ -1,28 +1,39 @@
 # Site settings
-title: Personal Website
-name: My Name
-description: My personal website hosted on GitHub Pages
+title: "Portfolio"
+name: "Designer & Developer"
+description: "Award-winning creative portfolio showcasing innovative design and development work"
 url: https://baba786.github.io
+repository: baba786/baba786.github.io
 
 # Build settings
-remote_theme: mmistakes/minimal-mistakes@4.24.0
-
-# Minimal Mistakes settings
-minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "custom" # Using our custom skin
 
 # Site Author
 author:
   name: "Your Name"
-  bio: "Web developer and tech enthusiast"
-  location: "Your Location"
+  avatar: "/assets/images/profile.png"
+  bio: "Product Designer & Developer crafting exceptional digital experiences"
+  location: "Earth"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/baba786"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "#"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "#"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "#"
 
 # Includes & Excludes
 include:
   - _pages
+  - assets
 
 # Front Matter Defaults
 defaults:
@@ -32,6 +43,7 @@ defaults:
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: true
       read_time: true
       comments: false
@@ -43,6 +55,7 @@ defaults:
       type: pages
     values:
       layout: single
+      classes: wide
       author_profile: true
 
 # Collections
@@ -58,3 +71,22 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-XXXXXXXXX-X"
+    anonymize_ip: false
+
+# Custom settings
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/baba786"
+
+# Atom feed
+atom_feed:
+  path: # blank (default) uses feed.xml
