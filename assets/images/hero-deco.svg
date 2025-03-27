@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Hero Decoration</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(400.000000, 300.000000) scale(-1, 1) translate(-400.000000, -300.000000) " fill="#FFFFFF">
+            <circle opacity="0.2" cx="150" cy="400" r="30"></circle>
+            <circle opacity="0.15" cx="450" cy="100" r="50"></circle>
+            <circle opacity="0.1" cx="650" cy="300" r="40"></circle>
+            <circle opacity="0.25" cx="300" cy="200" r="20"></circle>
+            <circle opacity="0.18" cx="700" cy="480" r="35"></circle>
+            <circle opacity="0.22" cx="100" cy="150" r="25"></circle>
+            <path d="M600,500 C634.182,500 662,472.182 662,438 C662,403.818 634.182,376 600,376 C565.818,376 538,403.818 538,438 C538,472.182 565.818,500 600,500 Z" opacity="0.15"></path>
+            <path d="M400,250 C417.673,250 432,235.673 432,218 C432,200.327 417.673,186 400,186 C382.327,186 368,200.327 368,218 C368,235.673 382.327,250 400,250 Z" opacity="0.2"></path>
+            <path d="M230,530 C238.837,530 246,522.837 246,514 C246,505.163 238.837,498 230,498 C221.163,498 214,505.163 214,514 C214,522.837 221.163,530 230,530 Z" opacity="0.25"></path>
+            <path d="M720,190 C729.941,190 738,181.941 738,172 C738,162.059 729.941,154 720,154 C710.059,154 702,162.059 702,172 C702,181.941 710.059,190 720,190 Z" opacity="0.18"></path>
+            <path d="M50,320 C61.0457,320 70,311.046 70,300 C70,288.954 61.0457,280 50,280 C38.9543,280 30,288.954 30,300 C30,311.046 38.9543,320 50,320 Z" opacity="0.2"></path>
+            <!-- Curved paths to connect some circles -->
+            <path d="M150,400 Q300,450 450,100" stroke="#FFFFFF" stroke-width="1" opacity="0.1"></path>
+            <path d="M650,300 Q500,200 300,200" stroke="#FFFFFF" stroke-width="1" opacity="0.1"></path>
+            <path d="M100,150 Q300,50 400,218" stroke="#FFFFFF" stroke-width="1" opacity="0.1"></path>
+            <path d="M720,172 Q600,300 230,514" stroke="#FFFFFF" stroke-width="1" opacity="0.1"></path>
+            <!-- Add some geometric elements -->
+            <rect x="500" y="50" width="30" height="30" opacity="0.15" transform="rotate(45 515 65)"></rect>
+            <rect x="180" y="280" width="20" height="20" opacity="0.2" transform="rotate(30 190 290)"></rect>
+            <rect x="680" y="380" width="25" height="25" opacity="0.18" transform="rotate(60 692.5 392.5)"></rect>
+            <!-- Triangle shapes -->
+            <polygon opacity="0.2" points="350,450 380,500 320,500"></polygon>
+            <polygon opacity="0.15" points="550,150 580,200 520,200"></polygon>
+            <polygon opacity="0.1" points="780,250 800,300 760,300"></polygon>
+        </g>
+    </g>
+</svg>
