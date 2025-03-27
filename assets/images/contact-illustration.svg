@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="500px" viewBox="0 0 600 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Contact Illustration</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6200EA" offset="0%"></stop>
+            <stop stop-color="#03DAC6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#6200EA" offset="0%"></stop>
+            <stop stop-color="#FF0166" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background shape -->
+        <circle fill="#F5F5F5" cx="300" cy="250" r="200"></circle>
+        
+        <!-- Email/Message envelope -->
+        <g transform="translate(175, 150)">
+            <!-- Envelope base -->
+            <rect fill="#FFFFFF" x="0" y="0" width="250" height="170" rx="10"></rect>
+            <rect fill="#F5F5F5" x="0" y="0" width="250" height="170" rx="10" stroke="#6200EA" stroke-width="2"></rect>
+            
+            <!-- Envelope flap (top) -->
+            <path d="M0,0 L125,80 L250,0 Z" fill="#F5F5F5" stroke="#6200EA" stroke-width="2"></path>
+            
+            <!-- Message inside -->
+            <rect fill="#FFFFFF" x="30" y="40" width="190" height="100" rx="5"></rect>
+            
+            <!-- Content lines -->
+            <rect fill="#6200EA" opacity="0.3" x="50" y="60" width="150" height="6" rx="3"></rect>
+            <rect fill="#6200EA" opacity="0.3" x="50" y="80" width="120" height="6" rx="3"></rect>
+            <rect fill="#6200EA" opacity="0.3" x="50" y="100" width="140" height="6" rx="3"></rect>
+            
+            <!-- Send button -->
+            <rect fill="url(#linearGradient-1)" x="160" y="120" width="40" height="20" rx="10"></rect>
+        </g>
+        
+        <!-- Decorative elements -->
+        <circle fill="url(#linearGradient-1)" opacity="0.8" cx="450" cy="150" r="30"></circle>
+        <circle fill="url(#linearGradient-2)" opacity="0.8" cx="150" cy="350" r="25"></circle>
+        <rect fill="#6200EA" opacity="0.6" x="400" y="350" width="40" height="40" rx="5"></rect>
+        <rect fill="#03DAC6" opacity="0.6" x="120" cy="120" width="30" height="30" rx="5"></rect>
+        
+        <!-- Connection paths -->
+        <path d="M150,350 C200,320 250,300 300,300 C350,300 400,320 450,150" stroke="#6200EA" stroke-width="2" opacity="0.3" stroke-dasharray="5,5"></path>
+        
+        <!-- Contact icons -->
+        <g transform="translate(460, 150)" fill="#FFFFFF">
+            <circle fill="#6200EA" cx="20" cy="20" r="20"></circle>
+            <path d="M15,15 L25,25 M15,25 L25,15" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+        </g>
+        
+        <g transform="translate(130, 350)" fill="#FFFFFF">
+            <circle fill="#FF0166" cx="20" cy="20" r="20"></circle>
+            <circle fill="#FFFFFF" cx="20" cy="15" r="5"></circle>
+            <path d="M10,25 Q20,35 30,25" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"></path>
+        </g>
+        
+        <!-- Floating particles -->
+        <circle fill="#6200EA" cx="120" cy="180" r="5" opacity="0.6"></circle>
+        <circle fill="#03DAC6" cx="480" cy="280" r="7" opacity="0.6"></circle>
+        <circle fill="#FF0166" cx="200" cy="380" r="6" opacity="0.6"></circle>
+        <circle fill="#6200EA" cx="400" cy="200" r="4" opacity="0.6"></circle>
+        
+        <!-- Abstract shapes -->
+        <polygon fill="#6200EA" opacity="0.4" points="500,400 520,430 480,430"></polygon>
+        <polygon fill="#03DAC6" opacity="0.4" points="100,200 120,230 80,230"></polygon>
+        
+        <!-- Mobile device -->
+        <g transform="translate(100, 180)">
+            <rect fill="#333333" x="0" y="0" width="40" height="80" rx="5"></rect>
+            <rect fill="#FFFFFF" x="5" y="10" width="30" height="50" rx="2"></rect>
+            <circle fill="#333333" cx="20" cy="70" r="5"></circle>
+        </g>
+        
+        <!-- Wi-Fi/signal waves -->
+        <path d="M150,220 Q180,200 210,220" stroke="#6200EA" stroke-width="2" fill="none" opacity="0.4"></path>
+        <path d="M150,210 Q180,180 210,210" stroke="#6200EA" stroke-width="2" fill="none" opacity="0.3"></path>
+        <path d="M150,200 Q180,160 210,200" stroke="#6200EA" stroke-width="2" fill="none" opacity="0.2"></path>
+    </g>
+</svg>
